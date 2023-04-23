@@ -55,6 +55,6 @@ func main() {
 	defer grpcConn.Close()
 
 	computeNodeClient := proto.NewComputeNodeClient(grpcConn)
-	_, err = computeNodeClient.SendJob(ctx, &proto.Job{JobID: 1, DockerImage: "example"})
+	_, err = computeNodeClient.SendJob(ctx, &proto.Job{JobID: 1, DockerImage: "ghcr.io/resource-aware-jds/example"})
 	fmt.Println(err)
 }
