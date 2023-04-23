@@ -3,7 +3,9 @@ module github.com/resource-aware-jds/control-plane
 go 1.20
 
 require (
-	github.com/resource-aware-jds/common-go v0.1.0
+	github.com/joho/godotenv v1.5.1
+	github.com/kelseyhightower/envconfig v1.4.0
+	github.com/resource-aware-jds/common-go v0.3.1
 	github.com/sirupsen/logrus v1.9.0
 	google.golang.org/grpc v1.54.0
 )
